@@ -52,3 +52,10 @@
 # Delphi history and backups
 __history/
 *.~*
+# Lazarus compiler-generated
+*.[oa]
+*.ppu
+*.dcu
+*.lps
+*.compiled
+*.bak*
