@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <Flags>
+        <SaveOnlyProjectUnits Value="True"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="tiOPFUnitTestsConsole"/>
+      <UseAppBundle Value="False"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="tiOPF"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="fptest"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="tiOPFUnitTestsConsole.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="tiOPFUnitTestsConsole"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="textprogressrunner.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="textprogressrunner"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../UnitTests/Common/tiTextTestRunner.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="tiTextTestRunner"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../UnitTests/Common/tiTestDependencies.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="tiTestDependencies"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../UnitTests/Common/tiTestFramework.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="tiTestFramework"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../UnitTests/Common/tiOPFTestCase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="tiOPFTestCase"/>
+      </Unit5>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="tiOPFUnitTestsConsole"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="../../Core"/>
+      <OtherUnitFiles Value="../../UnitTests/Common;../../UnitTests/Tests"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <CStyleOperator Value="False"/>
+        <IncludeAssertionCode Value="True"/>
+        <AllowLabel Value="False"/>
+        <CPPInline Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Optimizations>
+        <OptimizationLevel Value="0"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CustomOptions Value="-dDUNIT2
+-dXMLLISTENER
+-dLINK_CSV
+-dLINK_TAB
+-dLINK_FBLx
+-dLINK_SQLDB_IB
+-dLINK_SQLDB_PQ
+-dLINK_SQLDB_Oraclex
+-dLINK_SQLDB_SQLLite3x
+-dLINK_SQLDB_ODBCx
+-dLINK_SQLDB_MySQL40x
+-dLINK_SQLDB_MySQL41x
+-dLINK_SQLDB_MySQL50x
+-dLINK_XMLLIGHT
+-dLINK_ZEOS_FB15x
+-dUseCThreads"/>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="4">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="ETestFailure"/>
+      </Item4>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
